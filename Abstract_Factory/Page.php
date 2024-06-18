@@ -2,9 +2,14 @@
 require('Header.php');
 require('Footer.php');
 require('PageFactory.php');
+//blog
 require('BlogHeader.php');
 require('BlogFooter.php');
 require('BlogPageFactory.php');
+//portfolio 
+require('PortfolioHeader.php');
+require('PortfolioFooter.php');
+require('PortfolioPageFactory.php');
 
 
 function renderPage(PageFactory $factory) {
@@ -18,3 +23,8 @@ function renderPage(PageFactory $factory) {
 
 $blogFactory = new BlogPageFactory();
 renderPage($blogFactory);
+
+echo "<hr>";
+
+$portfolioFactory = new PortfolioPageFactory();
+renderPage($portfolioFactory);

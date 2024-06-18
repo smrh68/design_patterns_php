@@ -1,5 +1,4 @@
 <?php
-require('Header.php');
 
 class PortfolioHeader implements Header {
     public function render() {

@@ -1,5 +1,4 @@
 <?php
-require('Footer.php');
 
 class PortfolioFooter implements Footer {
     public function render() {
